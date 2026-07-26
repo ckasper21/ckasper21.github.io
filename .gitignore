@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (only if you add tooling later — no build step today)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.npm/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs & OS noise
+*.log
+Thumbs.db
