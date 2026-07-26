@@ -213,10 +213,6 @@ footer p { font-size: 0.8rem; color: var(--muted); }
     width: 64px; height: 64px;
     /* source is 1:1 with a 64px grid at this size — keep the blocks hard */
     image-rendering: pixelated;
-    /* art is light-on-pure-black, so `screen` knocks the background out without an alpha channel */
-    mix-blend-mode: screen;
-    /* walks the source blue (~205deg) over to --accent (~174deg) */
-    filter: hue-rotate(-32deg) saturate(0.9);
     opacity: 0.4;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }

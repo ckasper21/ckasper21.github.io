@@ -23,6 +23,8 @@ yarn-error.log*
 .env
 .env.*
 !.env.example
+.venv/
+venv/
 
 # Logs & OS noise
 *.log
