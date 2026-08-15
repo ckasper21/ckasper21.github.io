@@ -29,3 +29,5 @@ venv/
 # Logs & OS noise
 *.log
 Thumbs.db
+
+.claude

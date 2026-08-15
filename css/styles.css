@@ -167,6 +167,39 @@ h2.heading {
 }
 .chips li:hover { color: var(--text); border-color: var(--dim); }
 
+/* ── PROJECTS ── */
+.projects-col { display: flex; flex-direction: column; gap: 1.5rem; }
+.projects-list { display: flex; flex-direction: column; gap: 1.25rem; }
+.project-card {
+    display: block;
+    border: 1px solid var(--border); border-radius: 14px;
+    background: var(--surface);
+    overflow: hidden;
+    text-decoration: none; color: inherit;
+    transition: border-color 0.2s, transform 0.2s;
+}
+.project-card:hover { border-color: var(--dim); transform: translateY(-2px); }
+.project-media { border-bottom: 1px solid var(--border); background: var(--bg); }
+.project-media img { display: block; width: 100%; height: auto; }
+.project-card-body { padding: clamp(1.6rem, 3vw, 2.1rem); }
+.project-card-head {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; margin-bottom: 0.85rem;
+}
+.project-title { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.02em; color: var(--text); }
+.project-status {
+    flex-shrink: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.66rem; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--accent);
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--border); border-radius: 999px;
+}
+.project-desc { font-size: 0.95rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.25rem; }
+.project-tags { margin-bottom: 1.25rem; }
+.project-link { font-size: 0.85rem; font-weight: 500; color: var(--text); }
+.project-card:hover .project-link { color: var(--accent); }
+
 /* ── PROJECTS (Stay tuned) ── */
 .projects-empty {
     border: 1px solid var(--border); border-radius: 14px;
